@@ -1,0 +1,47 @@
+<script>
+
+/* 1. Two numerical variables to be checked with a condition (IF)
+- check if a>b then display "The number a is greater than b."
+- if a<b, display "The condition a>b is not met." */  
+let a = 1;
+let b = 2;
+if(a > b){
+    console.log("The number a=" + a + " is greater than b=" + b);
+}
+else{
+    console.log("The condition a>b is not met");
+}
+
+/* 2. The following array is given:
+Displays each car in the console as follows "Car number 1 is BMW." then "Car number 2 is a dacia." and so on;
+Pay attention to the display, the car from position 0 must appear in the console with number 1, the car with position 1 must appear in the console with number 2...
+That is, the number displayed in the console is +1 compared to the position in the array. */  
+cars = ["bmw", "dacia", "mercedes", "lancia"];
+for(i=0; i<cars.length; i++){
+    console.log("Car number " + (i+1) + " is " + cars[i]);
+}
+
+/* 3. A function that receives 2 numeric parameters and displays their product in the console like this:
+"The product of the numbers is X"  */
+function multiplyNumber(a,b){
+    console.log("The product of the numbers is: " + (a*b));
+}
+multiplyNumber(4,5);
+
+/* 4. A function that receives as parameters a name and gender of the person (in string format of type m or f) 
+and then displays in the console "Hello Mr./Ms. X." - MR or MS will be displayed based on gender; */
+function welcomeGender(name, gender){
+    if(gender === "m"){
+        console.log("Hello Mr. " + name + ".");
+    }
+    else{
+    console.log("Hello Ms. " + name + ".");
+    }
+}
+welcomeGender("Cristi","m" );
+welcomeGender("Ade","f"); 
+
+
+
+
+</script>
